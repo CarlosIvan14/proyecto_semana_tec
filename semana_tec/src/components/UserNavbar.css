@@ -1,0 +1,44 @@
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: #FFBD59;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+  }
+  
+  /* Estilos para los enlaces de navegación */
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  /* Estilos para el campo de búsqueda */
+  .navbar .form-control {
+    background-color: #fff; /* Fondo blanco para el campo de búsqueda */
+    border: none;
+  }
+  
+  /* Estilos para los botones de búsqueda y filtros */
+  .navbar .btn-light {
+    background-color: #FFBD59;
+    color: white;
+  }
+  
+  /* Estilos para el botón de inicio de sesión */
+  .navbar .btn-login {
+    background-color: #FFBD59;
+    color: white;
+    border: none;
+    font-size: 20px;
+    padding: 5px 10px;
+  }
+  
+  /* Estilos para el icono de usuario */
+  .navbar .btn-user {
+    background-color: #FFBD59;
+    color: white;
+    border: none;
+    font-size: 30px;
+    padding: 5px 10px;
+  }
+  
