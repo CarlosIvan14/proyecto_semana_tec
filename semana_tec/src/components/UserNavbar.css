@@ -28,7 +28,7 @@
   margin-right: 10px;
 }
 
-.user-navbar-search button {
+.b {
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -36,7 +36,14 @@
   color: white;
   margin-right: 5px;
 }
-
+.btn {
+  background-color: #75A9C3;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 15px;
+  color: white;
+  margin-right: 5px;
+}
 .user-navbar-search button:hover {
   color: #333;
 }

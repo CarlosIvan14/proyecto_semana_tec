@@ -6,7 +6,7 @@ function App() {
 
   return (
     <div className="App">
-      <CustomNavbar loggedIn={setLoggedIn} />
+      <CustomNavbar loggedIn={loggedIn} />
       {/* Resto de tu contenido */}
     </div>
   );

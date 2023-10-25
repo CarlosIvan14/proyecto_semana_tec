@@ -22,19 +22,19 @@ const UserNavbar = ({ loggedIn }) => {
           </div>
         )}
         <div className="user-navbar-search col-4">
-          <button>
+          <button className='b'>
             <FaFilter />
           </button>
           <input type="text" placeholder="Buscar" />
-          <button>
+          <button className='b'>
             <FaSearch />
           </button>
           {loggedIn ? (
-            <button>
+            <button className='b'>
               <FaUser />
             </button>
           ) : (
-            <button>Iniciar Sesión</button>
+            <button className='btn'>Iniciar Sesión</button>
           )}
         </div>
       </div>
