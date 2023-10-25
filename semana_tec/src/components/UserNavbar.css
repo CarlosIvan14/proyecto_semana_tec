@@ -1,44 +1,92 @@
-/* Estilos para la barra de navegación */
-.navbar {
-    background-color: #FFBD59;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
+/* Estilos generales */
+.user-navbar {
+  background-color: #FFBD59;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.user-navbar-content {
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.user-navbar-links a {
+  text-decoration: none;
+  color: white;
+  margin-left: 100px;
+}
+
+.user-navbar-search input {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.user-navbar-search button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: white;
+  margin-right: 5px;
+}
+
+.user-navbar-search button:hover {
+  color: #333;
+}
+
+.user-navbar-search button:active {
+  transform: scale(1.1);
+}
+
+/* Estilos para pantallas más pequeñas (dispositivos móviles y tabletas) */
+@media screen and (max-width: 768px) {
+  .user-navbar-links {
+    display: none; /* Ocultar el menú en dispositivos móviles */
   }
-  
-  /* Estilos para los enlaces de navegación */
-  .navbar a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
+
+  .user-navbar-search {
+    margin-top: 10px;
+    display: flex;
+    align-items: center; /* Para alinear verticalmente los elementos */
   }
-  
-  /* Estilos para el campo de búsqueda */
-  .navbar .form-control {
-    background-color: #fff; /* Fondo blanco para el campo de búsqueda */
+
+  .user-navbar-search input {
+    width: 100%;
+  }
+
+  .user-navbar-search button {
+    background-color: transparent;
     border: none;
-  }
-  
-  /* Estilos para los botones de búsqueda y filtros */
-  .navbar .btn-light {
-    background-color: #FFBD59;
+    cursor: pointer;
+    font-size: 24px;
     color: white;
   }
-  
-  /* Estilos para el botón de inicio de sesión */
-  .navbar .btn-login {
-    background-color: #FFBD59;
-    color: white;
+
+  .menu-toggle {
+    background-color: transparent;
     border: none;
-    font-size: 20px;
-    padding: 5px 10px;
-  }
-  
-  /* Estilos para el icono de usuario */
-  .navbar .btn-user {
-    background-color: #FFBD59;
+    cursor: pointer;
+    font-size: 24px;
     color: white;
-    border: none;
-    font-size: 30px;
-    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 30px; /* Altura de las tres líneas del menú */
+    width: 30px; /* Ancho de las tres líneas del menú */
   }
-  
+
+  .menu-icon {
+    background-color: white;
+    height: 5px;
+    width: 30px;
+    /* Espacio entre las tres líneas del menú */
+  }
+}

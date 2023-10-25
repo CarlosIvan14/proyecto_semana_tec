@@ -1,37 +1,44 @@
 import React from 'react';
-import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap';
-import { FaSearch, FaFilter, FaUser } from 'react-icons/fa';
 import './UserNavbar.css';
-const UserNavbar = ({ loggedIn }) => {
-  return (
-    <Navbar bg="#FFBD59" expand="lg">
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="mr-auto row">
-          <Nav.Link href="#home" className='col-1'>Home</Nav.Link>
-          <Nav.Link href="#compras" className='col-1'>Compras</Nav.Link>
-          <Nav.Link href="#carrito" className='col-1'>Carrito</Nav.Link>
-          <Form className='col-6'>
-          <FormControl type="text" placeholder="Buscar" className="mr-sm-2" />
-          <Button variant="light">
-            <FaSearch />
-          </Button>
-          <Button variant="light" className="ml-2">
-            <FaFilter />
-          </Button>
-        </Form>
+import { FaSearch, FaFilter, FaUser } from 'react-icons/fa';
 
-        {loggedIn ? (
-          <Button variant="light" className="ml-2">
-            <FaUser />
-          </Button>
+const UserNavbar = ({ loggedIn }) => {
+  const isMobile = window.innerWidth <= 768; // Determinar si estamos en un dispositivo móvil
+
+  return (
+    <div className="user-navbar">
+      <div className="user-navbar-content row">
+        {isMobile ? (
+          <button className="menu-toggle">
+            <div className="menu-icon"></div>
+            <div className="menu-icon"></div>
+            <div className="menu-icon"></div>
+          </button>
         ) : (
-          <Button variant="light" className="ml-2">
-            Iniciar Sesión 
-          </Button>
+          <div className="user-navbar-links col-8 row">
+            <a href="#home" className='col-2'>Home</a>
+            <a href="#compras" className='col-2'>Compras</a>
+            <a href="#carrito" className='col-2'>Carrito</a>
+          </div>
         )}
-        </Nav>
-      </Navbar.Collapse>
-    </Navbar>
+        <div className="user-navbar-search col-4">
+          <button>
+            <FaFilter />
+          </button>
+          <input type="text" placeholder="Buscar" />
+          <button>
+            <FaSearch />
+          </button>
+          {loggedIn ? (
+            <button>
+              <FaUser />
+            </button>
+          ) : (
+            <button>Iniciar Sesión</button>
+          )}
+        </div>
+      </div>
+    </div>
   );
 };
 
