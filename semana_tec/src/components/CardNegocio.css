@@ -32,8 +32,8 @@
     font-family: 'Fira Sans', sans-serif;
     font-size: 50px;
     font-weight: bold;
-    background-image: url("./vista2.jpg");
-    background-size: 400%;
+    background-image: url("./default.png");
+    background-size: 103%;
     background-position: left;
     position: relative;
     display: flex; /* Usa flexbox para centrar verticalmente el contenido */

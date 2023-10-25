@@ -16,8 +16,8 @@ const UserNavbar = ({ loggedIn }) => {
           </button>
         ) : (
           <div className="user-navbar-links col-8 row">
-            <a href="#home" className='col-2'>Home</a>
-            <a href="#compras" className='col-2'>Compras</a>
+            <a href="/" className='col-2'>Home</a>
+            <a href="/Compras" className='col-2'>Compras</a>
             <a href="#carrito" className='col-2'>Carrito</a>
           </div>
         )}
