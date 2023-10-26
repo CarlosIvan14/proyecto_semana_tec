@@ -4,14 +4,17 @@ from telebot.types import ReplyKeyboardMarkup, KeyboardButton
 from connection import Connection
 
 
+# Bot token and bot object
 bot_token: str = "1593798070:AAH7wU1lahSNpjv70VQ3bMhlK5UhFq1OhUw"
-bot = telebot.TeleBot(token=bot_token)
+bot = telebot.TeleBot(token = bot_token)
 
+# Global variables
 cart: dict[str, int] = {}
 selected_product: str = ""
 selected_local: str = ""
 already_selected_local: bool = False
 
+# MySQL database connection
 database: Connection = Connection()
 
 
@@ -338,7 +341,7 @@ def pay(message) -> None:
     selection: str = message.text
 
     if selection == "💵 Pagar":
-        reply: str = "Por favor, escribe tu nombre y tu dirección de la siguiente manera:\nPrimer_nombre Dirección"
+        reply: str = "Por favor, escribe tu nombre y tu dirección de la siguiente manera:\nPrimer nombre\nDirección"
         bot.send_message(message.chat.id, reply)
         bot.register_next_step_handler(message, checkout)
 
@@ -364,8 +367,8 @@ def checkout(message) -> None:
         - No return value
     """
 
-    name: str = message.text[0: message.text.find(" ")]
-    address: str = message.text[message.text.find(" "):]
+    name: str = message.text[0: message.text.find("\n")]
+    address: str = message.text[message.text.find("\n"):]
 
     reply: str = f"Gracias por tu compra {name}\nEn un momento recibirás tu pedido"
     database.send_order(cart, selected_local, name, address)
