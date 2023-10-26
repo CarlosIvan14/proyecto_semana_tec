@@ -77,7 +77,16 @@ class Connection:
 
     def send_order(self, cart: dict[str, int], local: str, name: str, address: str) -> None:
         """
-        
+        Send the order to the 'pedidos' database
+
+        Parameters:
+            - cart: dict[str, int]
+            - local: str
+            - name: str
+            - address: str
+
+        Returns:
+            - No return value
         """
 
         product_dict: dict[str, int] = self.get_products(local)
