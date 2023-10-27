@@ -1,0 +1,57 @@
+
+.banner-negocio{
+    width: 100%;
+    height: 18rem;
+    background-size: 103%;
+    background-image: url("./default.png");
+}
+/* NegocioInfo.css */
+
+/* Estilo para el contenedor principal del componente */
+.negocio-info {
+    background-color: #f8f8f8;
+  }
+  
+  /* Estilo para el título del negocio */
+  h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo para los subtítulos */
+  h4 {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  /* Estilo para el párrafo de descripción */
+  p {
+    font-size: 16px;
+  }
+  
+  /* Estilo para el mapa de Google */
+  iframe {
+    margin-top: 10px;
+  }
+  
+  /* Estilo para el párrafo de horario */
+  p {
+    margin-top: 10px;
+  }
+.nombre{
+    text-align: center;
+}
+.btn-success{
+  width: 200px !important; /* Ancho del botón */
+  height: 40px !important; /* Alto del botón */
+  background-color: rgb(24, 229, 31) !important; /* Color de fondo (rojo) */
+  border: none !important; /* Sin borde */
+  border-radius: 20px !important; /* Forma circular (50% del ancho/alto) */
+  color: white !important; /* Color del texto (blanco) */
+  font-size: 20px !important; /* Tamaño del texto */
+  cursor: pointer !important; /* Cambia el cursor al pasar por encima */
+  outline: none !important; /* Elimina el contorno predeterminado al hacer clic */
+  transition: background-color 0.3s !important; /* Transición para el cambio de color */
+}

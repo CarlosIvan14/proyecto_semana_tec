@@ -1,0 +1,35 @@
+.producto {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  .producto-imagen {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .producto-nombre {
+    width: 40rem;
+    font-size: 28px;
+    font-weight: bold;
+  }
+/* Producto.css */
+
+.producto-informacion {
+  display: flex; /* Utiliza flexbox para alinear el nombre y el precio */
+  justify-content: space-between; /* Coloca el nombre a la izquierda y el precio a la derecha */
+  flex-grow: 1; /* Hace que la información ocupe todo el espacio restante */
+}
+
+.producto-precio {
+  text-align: right;
+  font-size: 26px; /* Tamaño de fuente del precio */
+  font-weight: bold;
+  color: rgb(28, 250, 7); /* Color rojo para el precio */
+}

@@ -1,0 +1,78 @@
+/* CardSalon.css */
+
+.custom-card {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 100%;
+    max-width: 250px;
+    max-height: 250px;
+    margin: 0 auto;
+    display: flex; /* Usamos flex para alinear el contenido verticalmente */
+    flex-direction: column; /* Apila el contenido verticalmente */
+    justify-content: space-between; /* Distribuye el espacio verticalmente */
+    height: 100%; /* Ocupa todo el espacio vertical disponible */
+  }
+  
+  .numero {
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    align-self: flex; /* Alinea el número en la esquina superior derecha */
+    margin: 10px; /* Agrega un pequeño margen para separar el número del borde de la tarjeta */
+  }
+  
+  
+  .card-content {
+    height: 18rem;
+    text-align: right;
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    background-image: url("./default.png");
+    background-size: 103%;
+    background-position: left;
+    position: relative;
+    display: flex; /* Usa flexbox para centrar verticalmente el contenido */
+    flex-direction: column; /* Apila el contenido verticalmente */
+    justify-content: center; /* Centra verticalmente el contenido */
+  }
+  
+  .card-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-text {
+    padding: 20px;
+  }
+  
+  .card-footer {
+    background-color: rgb(81, 149, 178);
+    color: #fff;
+    text-align: center;
+    max-height: 70px;
+    padding: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  
+  .card-footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .card-footer a:hover {
+    text-decoration: underline;
+  }
+  
+  .modal_link {
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  

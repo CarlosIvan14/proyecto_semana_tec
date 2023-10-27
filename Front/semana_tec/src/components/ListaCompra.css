@@ -1,0 +1,34 @@
+/* Estilos para el botón circular */
+.circle-button {
+    width: 40px; /* Ancho del botón */
+    height: 40px; /* Alto del botón */
+    background-color: red; /* Color de fondo (rojo) */
+    border: none; /* Sin borde */
+    border-radius: 50%; /* Forma circular (50% del ancho/alto) */
+    color: white; /* Color del texto (blanco) */
+    font-size: 20px; /* Tamaño del texto */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    outline: none; /* Elimina el contorno predeterminado al hacer clic */
+    transition: background-color 0.3s; /* Transición para el cambio de color */
+  }
+  
+  .circle-button:hover {
+    background-color: darkred; /* Cambio de color al pasar el mouse */
+  }
+  .but{
+    text-align: right;
+  }
+  .btn-success{
+    width: 40px !important; /* Ancho del botón */
+    height: 40px !important; /* Alto del botón */
+    background-color: rgb(24, 229, 31) !important; /* Color de fondo (rojo) */
+    border: none !important; /* Sin borde */
+    border-radius: 50% !important; /* Forma circular (50% del ancho/alto) */
+    color: white !important; /* Color del texto (blanco) */
+    font-size: 20px !important; /* Tamaño del texto */
+    cursor: pointer !important; /* Cambia el cursor al pasar por encima */
+    outline: none !important; /* Elimina el contorno predeterminado al hacer clic */
+    transition: background-color 0.3s !important; /* Transición para el cambio de color */
+}
+
+
